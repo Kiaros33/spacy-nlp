@@ -1,5 +1,8 @@
 from collections import OrderedDict
 import spacy  # NLP with spaCy https://spacy.io
+import sys  
+reload(sys)  
+sys.setdefaultencoding('utf8')
 nlp = spacy.load('en_core_web_md')  # will take some time to load
 
 # Useful properties, summary of the docs from https://spacy.io
